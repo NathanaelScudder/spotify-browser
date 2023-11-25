@@ -1,0 +1,7 @@
+<div class="progress">
+	<!--Set style.background-color based on the audio feature's color and style.width via the audio feature's percent. 
+      Display feature name and percent.-->
+  <div [ngStyle]="{'width': trackFeature.percentageString, 'background-color': trackFeature.color}" class="progress-bar" role="progressbar">
+  	<span class="progress-bar-text">{{trackFeature.name}}: {{trackFeature.percentageString}}</span>
+  </div>
+</div>
