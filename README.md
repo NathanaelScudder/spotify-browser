@@ -26,11 +26,26 @@
 
 <p>How to run the project on your local machine, step-by-step.</p>
 
-<ol>
-    <li>Ensure you have Node and Angular installed on your device</li>
-    <li>Running the project requires a valid Spotify account and Spotify App. You can create a Spotify App from <a href="https://developer.spotify.com/dashboard">here</a> (create as a website, not a commercial application). Once created, save the app's Client ID and Client secret from under "Basic Information"</li>
-    <li>Add the Client ID and Client secret to "webserver\client_secret_template.json" in their respective positions. Then rename the file to "client_secret.json"</li>
-    <li>Rename "tokens_template.json" to "tokens.json"</li>
-    <li>Navigate to the webserver directory in the command-line, then run "npm install", "npm update", and "npm start" in order</li>
-    <li>Navgiate to the client directory in a separate tab, then run "npm install" and "npm update", and "ng serve --open" in order to launch the application</li>
-</ol>
+<p>Firstly, ensure you have Node and Angular installed on your device.</p>
+
+<p>Running the project requires a valid Spotify account and Spotify App. You can create a Spotify App from <a href="https://developer.spotify.com/dashboard">here</a> (create as a website, not a commercial application). Once created, save the app's Client ID and Client secret from under "Basic Information".</p>
+
+<p>Add the Client ID and Client secret to "webserver\client_secret_template.json" in their respective positions. Then rename the file to "client_secret.json".</p>
+
+<p>Rename "tokens_template.json" to "tokens.json".</p>
+
+<p>Navigate to the webserver directory in the command-line, then run:</p>
+
+```bash
+npm install
+# then
+npm start
+```
+
+<p>Navgiate to the client directory in a separate tab, then run:</p>
+
+```bash
+npm install
+# then
+ng serve --open
+```
